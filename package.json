@@ -12,10 +12,23 @@
   "bugs": {
     "url": "https://github.com/32bitkid/4bitlabs.sci-asset-loader/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/32bitkid/4bitlabs.sci-asset-loader.git"
+  },
   "license": "ISC",
   "author": "J Holmes <j@holmes.codes>",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
   "main": "dist/index.mjs",
+  "files": [
+    "./dist/**/*"
+  ],
   "scripts": {
     "build": "tsdown",
     "lint": "biome check",
@@ -25,10 +38,6 @@
   "dependencies": {
     "regexp.escape": "^2.0.1"
   },
-  "peerDependencies": {
-    "@4bitlabs/sci0": "^6.2.1",
-    "astro": "^7.0.0"
-  },
   "devDependencies": {
     "@biomejs/biome": "^2.5.15",
     "@types/node": "^24.0.0",
@@ -37,6 +46,10 @@
     "conventional-changelog-conventionalcommits": "^10.4.1",
     "tsdown": "^0.23.1",
     "typescript": "^6.0.3"
+  },
+  "peerDependencies": {
+    "@4bitlabs/sci0": "^6.2.1",
+    "astro": "^7.0.0"
   },
   "allowScripts": {
     "fsevents@2.3.3": true

@@ -15,6 +15,12 @@
 
 An Astro integration for loading [Sierra On-line][sierra] [SCI-engine][sci0] assets from resource files and patches.
 
+## Install
+
+```bash
+npm install --save-dev astro @4bitlabs/sci0 @4bitlabs/sci-asset-loader
+```
+
 ## Usage
 
 There are two loaders available `sciAssetLoader` and `sciRawAssetLoader`
