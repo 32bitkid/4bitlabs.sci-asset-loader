@@ -1,6 +1,6 @@
 {
   "name": "@4bitlabs/sci-asset-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An Astro integration for loading Sierra On-Line SCI0/SCI01 engine assets from resource files and patches.",
   "keywords": [
     "withastro",
